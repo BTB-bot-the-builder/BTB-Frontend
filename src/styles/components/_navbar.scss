@@ -13,8 +13,8 @@
 }
 
 h3{
-    margin: 1.7rem;
-    font-weight: 510;
+    margin: 1.5rem;
+    font-weight: 530;
 }
 
 h3:hover{
@@ -25,7 +25,7 @@ h3:hover{
     border: 0.1rem solid white;
     margin: 1.2rem 0.5rem 1.2rem 50rem;
     padding: 0.7rem 1rem;
-    border-radius: 7rem;
+    border-radius: 1.5rem;
     background: white;
     transition: 500ms;
 
@@ -33,19 +33,19 @@ h3:hover{
 
 #features_button:hover{
     color: white;
-    background: black;
+    background: #2E9AFD;
 }
 
 #get_started_button{
     border: 0.1rem solid white;
     margin: 1.2rem 1rem 1.2rem 0.5rem;
     padding: 0.7rem 1rem;
-    border-radius: 7rem;
+    border-radius: 1.5rem;
     background: white;
     transition: 500ms;
 }
 
 #get_started_button:hover{
     color: white;
-    background: black;
+    background: #2E9AFD;
 }
