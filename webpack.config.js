@@ -3,6 +3,7 @@
 const path = require("path");
 
 module.exports = {
+  mode: 'development',
   entry: "./src/app.js",
   output: {
     path: path.join(__dirname, "public"),
@@ -21,8 +22,8 @@ module.exports = {
       },
     ],
   },
-  devtool: "cheep-module-eval-source-map",
+  devtool: "eval-cheap-module-source-map",
   devServer: {
-    contentBase: path.join(__dirname, "public"),
+    static: path.join(__dirname, "public"),
   },
 };
