@@ -1,0 +1,36 @@
+.progress_bar{
+    display: flex;
+    .label{
+        font-size: 1.1rem;
+        margin-top: 2.5rem;
+        margin-left: 0.5rem;
+    }
+
+    .step_number{
+        color: white;
+        padding: 0.85rem 1.25rem;
+        border-radius: 100rem;
+        background: #3E3E3E;
+    }
+
+    .number1{
+        margin-left: 5rem;
+    }
+
+    .number2{
+        margin-left: 7rem;
+        background: #B0B0B0;
+    }
+
+    .number3{
+        margin-left: 9rem;
+        background: #B0B0B0;
+    }
+
+    #logo{
+        margin-top: 0.5rem;
+        margin-left: 36rem;
+        margin-right: 0.8rem;
+    }
+
+}
