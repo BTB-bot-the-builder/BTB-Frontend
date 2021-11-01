@@ -1,51 +1,5 @@
-.navbar{
-    display: flex;
-
-    #logo{
-        height: 5rem;
-        width: 5rem;
-        margin-left: 4rem;
-    }
-    
-    #logo:hover{
-        cursor: pointer;
-    }
-    
-    h3{
-        margin: 1.5rem;
-        font-weight: 530;
-    }
-    
-    h3:hover{
-        cursor: pointer;
-    }
-    
-    #features_button{
-        border: 0.1rem solid white;
-        margin: 1.2rem 0.5rem 1.2rem 50rem;
-        padding: 0.7rem 1rem;
-        border-radius: 1.5rem;
-        background: white;
-        transition: 500ms;
-    
-    }
-    
-    #features_button:hover{
-        color: white;
-        background: #2E9AFD;
-    }
-    
-    #get_started_button{
-        border: 0.1rem solid white;
-        margin: 1.2rem 1rem 1.2rem 0.5rem;
-        padding: 0.7rem 1rem;
-        border-radius: 1.5rem;
-        background: white;
-        transition: 500ms;
-    }
-    
-    #get_started_button:hover{
-        color: white;
-        background: #2E9AFD;
+.Navbar{
+    .logo{
+        width: ;
     }
 }

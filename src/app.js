@@ -6,5 +6,5 @@ import LandingPageComponent from './components/LandingPageComponents/LandingPage
 import MainPageComponent from './components/MainPageComponents/MainPageComponent'
 
 
-ReactDOM.render(<MainPageComponent />, document.getElementById("app"));
-// ReactDOM.render(<LandingPageComponent/>, document.getElementById("app"));
+// ReactDOM.render(<MainPageComponent />, document.getElementById("app"));
+ReactDOM.render(<LandingPageComponent/>, document.getElementById("app"));
