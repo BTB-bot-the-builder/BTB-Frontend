@@ -1,0 +1,124 @@
+$assetPath: "C:/Users/Asus/Desktop/BTB-Frontend-main/public/images";
+
+.main {
+  background: url(#{$assetPath}/hexagon.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 110px 160px;
+  background-size: 450px 450px;
+  display: flex;
+  align-items: flex-start;
+
+  .form {
+    margin-top: 45px;
+    margin-left: 25px;
+
+    .name{
+      margin-bottom: 35px;
+      label{
+        display: flex;
+        align-items: top;
+        span{
+          margin-right: 19%;
+          font-size: 1.35rem;
+        }
+      }
+    }
+
+    .description{
+      margin-bottom: 35px;
+      label{
+        display: flex;
+        align-items: top;
+        span{
+          margin-right: 26%;
+          font-size: 1.35rem;
+        }
+      }
+
+    }
+
+    .avatar {
+      $image-bg: gray;
+      $image-border: white;
+      $image-border-current: aqua;
+      display: flex;
+
+      span{
+        margin-right: 178px;
+        font-size: 1.35rem;
+      }
+
+      .icons{
+        max-width: 270px;
+      }
+
+      .square{
+        width: 50px;
+        height: 50px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        margin: 2px;
+      }
+
+      .image {
+        opacity: 1;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 2px solid black;
+        background-image: url(#{$assetPath}/avatar.png);
+        background-position: center center;
+        background-color: $image-bg;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+      .radio-img {
+        > input {
+          display: none;
+        }
+        > .image {
+          cursor: pointer;
+          border: 2px solid black;
+        }
+        > input:checked + .square {
+          background-color: rgb(70, 207, 70);
+          border: 1px solid grey;
+        }
+      }
+    }
+
+    .button{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 80%;
+      margin-top: 4%;
+      padding: 0;
+
+      button{
+        border-radius: 10px;
+        background: rgb(130, 245, 130);
+        padding: 7px 30%;
+        border: none;
+      }
+    }
+  }
+
+  .image {
+    img {
+      margin-left: 16rem;
+      width: 450px;
+      height: 450px;
+    }
+  }
+}
