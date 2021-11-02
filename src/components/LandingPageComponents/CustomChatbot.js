@@ -2,7 +2,7 @@ import React from "react";
 import ChatBot from "react-simple-chatbot";
 import { ThemeProvider } from "styled-components";
 
-function CustomChatbot(props) {
+const CustomChatbot = (props) => {
     const config = {
       width: "300px",
       height: "400px",

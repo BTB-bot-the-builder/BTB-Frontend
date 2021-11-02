@@ -2,11 +2,10 @@ import React from 'react';
 import ProgressBar from './ProgressBar';
 import MainPageBody from './MainPageBody';
 
-
 class MainPageComponent extends React.Component{
     render(){
         return (
-            <div>
+            <div className='Main'>
                 <ProgressBar></ProgressBar>
                 <MainPageBody></MainPageBody>
             </div>

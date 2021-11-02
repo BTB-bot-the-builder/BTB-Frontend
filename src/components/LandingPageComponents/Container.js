@@ -1,5 +1,5 @@
 import React from "react";
-import MarketingText from "./MarketingText";
+import MarketingText from './MarketingText';
 class Container extends React.Component{
     render(){
         return (
