@@ -4,7 +4,7 @@ import Body from './Body';
 import CustomChatbot from './CustomChatbot';
 
 const styleline = {
-    margi: 0,
+    margin: 0,
     padding: 0,
     boxSizing: 'border-box'
 }
@@ -15,8 +15,8 @@ class LandingPageComponent extends React.Component{
         return (
             <div style={styleline}>
                 <Navbar></Navbar>
-                {/* <Body></Body>
-                <CustomChatbot></CustomChatbot> */}
+                <Body></Body>
+                <CustomChatbot></CustomChatbot>
             </div>
         );
     }

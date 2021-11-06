@@ -1,4 +1,5 @@
 import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap'
 
 let Background = "http://icons.iconarchive.com/icons/hopstarter/face-avatars/256/Female-Face-FG-1-brunette-icon.png";
 
@@ -7,11 +8,11 @@ class MainPageBody extends React.Component {
         return (
             <div className='main'>
                 <div className='form'>
-                    <form>
+                    <form style={{minWidth: '513px'}}>
                         <div className='name'>
                             <label>
                                 <span>Name your bot:</span>
-                                <input type='text' name='name' size='30'></input>
+                                <input type='text' name='name' size='31'></input>
                             </label>
                         </div>
                         <div className='description'>
@@ -21,9 +22,7 @@ class MainPageBody extends React.Component {
                             </label>
                         </div>
                         <div className='avatar'>
-                            <div>
-                                <span >Avatar:</span>
-                            </div>
+                            <span >Avatar:</span>
                             <div className='icons'>
                                 <label className="radio-img">
                                     <input type="radio" name="layout" value='1' />
@@ -31,7 +30,36 @@ class MainPageBody extends React.Component {
                                         <div className="image"></div>
                                     </div>
                                 </label>
-
+                                <label className="radio-img">
+                                    <input type="radio" name="layout" value='2' />
+                                    <div className='square'>
+                                        <div className="image"></div>
+                                    </div>
+                                </label>
+                                <label className="radio-img">
+                                    <input type="radio" name="layout" value='3' />
+                                    <div className='square'>
+                                        <div className="image"></div>
+                                    </div>
+                                </label>
+                                <label className="radio-img">
+                                    <input type="radio" name="layout" value='3' />
+                                    <div className='square'>
+                                        <div className="image"></div>
+                                    </div>
+                                </label>
+                                <label className="radio-img">
+                                    <input type="radio" name="layout" value='3' />
+                                    <div className='square'>
+                                        <div className="image"></div>
+                                    </div>
+                                </label>
+                                <label className="radio-img">
+                                    <input type="radio" name="layout" value='3' />
+                                    <div className='square'>
+                                        <div className="image"></div>
+                                    </div>
+                                </label>
                                 <label className="radio-img">
                                     <input type="radio" name="layout" value='2' />
                                     <div className='square'>
@@ -63,78 +91,9 @@ class MainPageBody extends React.Component {
                                         <div className="image"></div>
                                     </div>
                                 </label>
-                                <label className="radio-img">
-                                    <input type="radio" name="layout" value='3' />
-                                    <div className='square'>
-                                        <div className="image"></div>
-                                    </div>
-                                </label>
-                                <label className="radio-img">
-                                    <input type="radio" name="layout" value='3' />
-                                    <div className='square'>
-                                        <div className="image"></div>
-                                    </div>
-                                </label>
-                                <label className="radio-img">
-                                    <input type="radio" name="layout" value='3' />
-                                    <div className='square'>
-                                        <div className="image"></div>
-                                    </div>
-                                </label>
-                                <label className="radio-img">
-                                    <input type="radio" name="layout" value='3' />
-                                    <div className='square'>
-                                        <div className="image"></div>
-                                    </div>
-                                </label>
-                                <label className="radio-img">
-                                    <input type="radio" name="layout" value='3' />
-                                    <div className='square'>
-                                        <div className="image"></div>
-                                    </div>
-                                </label>
-                                <label className="radio-img">
-                                    <input type="radio" name="layout" value='3' />
-                                    <div className='square'>
-                                        <div className="image"></div>
-                                    </div>
-                                </label>
-                                <label className="radio-img">
-                                    <input type="radio" name="layout" value='3' />
-                                    <div className='square'>
-                                        <div className="image"></div>
-                                    </div>
-                                </label>
-                                <label className="radio-img">
-                                    <input type="radio" name="layout" value='3' />
-                                    <div className='square'>
-                                        <div className="image"></div>
-                                    </div>
-                                </label>
-                                <label className="radio-img">
-                                    <input type="radio" name="layout" value='3' />
-                                    <div className='square'>
-                                        <div className="image"></div>
-                                    </div>
-                                </label>
-                                <label className="radio-img">
-                                    <input type="radio" name="layout" value='3' />
-                                    <div className='square'>
-                                        <div className="image"></div>
-                                    </div>
-                                </label>
-                                <label className="radio-img">
-                                    <input type="radio" name="layout" value='3' />
-                                    <div className='square'>
-                                        <div className="image"></div>
-                                    </div>
-                                </label>
                             </div>
                         </div>
-                        <br></br>
-                        <div className='button'>
-                            <button>Next</button>
-                        </div>
+                        <button>Next</button>
                     </form>
                 </div>
                 <div className='image'>

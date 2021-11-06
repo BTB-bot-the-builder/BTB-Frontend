@@ -1,5 +1,60 @@
 .Navbar{
-    .logo{
-        width: ;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 5%;
+
+    .left_content{
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .logo {
+            width: 85px;
+            height: 82px;
+            cursor: pointer;
+        }
+    
+        p{
+            margin-left: 1px;
+            font-size: 28px;
+            margin-bottom: 0;
+            padding: 0;
+        }
+    }
+
+    .nav__links{
+        padding: 0;
+        margin-bottom: 0;
+        margin-right: 7%;
+        display: flex;
+        list-style-type: none;
+
+        li{
+            margin: 0 7%;
+            a{
+                font-size: 21px;
+                padding: 3px 19px;
+                text-align: center;
+                cursor: pointer;
+                text-decoration:none;
+            }
+        }
+
+        li:nth-child(1){
+            a{
+                color: black;
+            }
+        }
+
+        li:nth-child(2){
+            a{
+                border-radius: 10px;
+                background-color: black;
+                color: white;
+            }
+        }
     }
 }
