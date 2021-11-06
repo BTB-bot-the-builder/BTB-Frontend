@@ -1,0 +1,9 @@
+$assetPath: "E:/react/bot-the-builder/public/images";
+
+.my_project_page_main{
+    background: url(#{$assetPath}/hexagon.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 450px 450px;
+}

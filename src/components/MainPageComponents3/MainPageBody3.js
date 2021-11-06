@@ -5,25 +5,23 @@ let Background = "http://icons.iconarchive.com/icons/hopstarter/face-avatars/256
 class MainPageBody3 extends React.Component {
     render() {
         return (
-            <div className='main'>
-                <div className='form'>
+            <div className='main' style={{alignItems: 'flex-start'}}>
+                <div className='form' style={{marginTop: '18px'}}>
                     <form>
                         <div className="main_page_form3">
                             <div className='page_names'>
-                                    <span className="input_label1">Name</span>
-                                    <input type='text' name='home' size='20' placeholder="Home"></input>
+                                <span className="input_label1">Name</span>
+                                <input type='text' name='home' size='15' placeholder="Home"></input>
                             </div>
                             <div className='page_urls'>
                                 <span className="input_label2">URL</span>
-                                <input type='url' name='home_url' size='60' placeholder="www.home.com"></input>
+                                <input type='url' name='home_url' size='45' placeholder="www.home.com"></input>
                             </div>
                         </div>
                         <div className='add-button'>
-                            <button><p>Add</p></button>
+                            <button>Add</button>
                         </div>
-                        <div id='main_page_button3' className='button'>
-                            <button><p>Deploy</p></button>
-                        </div>
+                        <button style={{position: 'relative', top: '200%'}}>Deploy</button>
                     </form>
                 </div>
                 <div className='image'>

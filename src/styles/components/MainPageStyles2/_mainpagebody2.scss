@@ -1,9 +1,8 @@
-$assetPath: "E:/react/bot-the-builder/public/images";
+// $assetPath: "C:/Users/Asus/Desktop/BTB-Frontend-main/public/images";
+$assetPath: "E:/react/bot-the-builder/public/imagess";
 
 .main {
-
   .form {
-
     .fileUpload{
       margin-bottom: 35px;
       label{
@@ -31,19 +30,11 @@ $assetPath: "E:/react/bot-the-builder/public/images";
         font-style: italic;
       }
       img{
-        padding: 0.5rem;
+        padding: 0.7rem;
         background-color: white;
         border: 2px solid #E1E4E8;
         border-radius: 10px;
       }
-    }
-
-
-  }
-
-  .image {
-    img {
-      margin-left: 17.5rem;
     }
   }
 }

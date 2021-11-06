@@ -1,4 +1,4 @@
-.Navbar{
+.LoginNavbar{
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -28,12 +28,12 @@
     .nav__links{
         padding: 0;
         margin-bottom: 0;
-        margin-right: 7%;
+        margin-right: 3%;
         display: flex;
         list-style-type: none;
 
         li{
-            margin: 0 7%;
+            margin: 0 20px;
             a{
                 font-size: 21px;
                 padding: 3px 19px;
@@ -51,8 +51,20 @@
 
         li:nth-child(2){
             a{
+                color: black;
+            }
+        }
+
+        li:nth-child(3){
+            a{
+                color: black;
+            }
+        }
+
+        li:nth-child(4){
+            a{
                 border-radius: 10px;
-                background-color: black;
+                background-color:#FF6363;
                 color: white;
             }
         }

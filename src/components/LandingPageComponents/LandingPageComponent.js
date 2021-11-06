@@ -1,14 +1,21 @@
 import React from 'react';
 import Navbar from './Navbar'
-import Container from './Container';
+import Body from './Body';
 import CustomChatbot from './CustomChatbot';
 
+const styleline = {
+    margin: 0,
+    padding: 0,
+    boxSizing: 'border-box'
+}
+
 class LandingPageComponent extends React.Component{
+
     render() {
         return (
-            <div>
+            <div style={styleline}>
                 <Navbar></Navbar>
-                <Container></Container>
+                <Body></Body>
                 <CustomChatbot></CustomChatbot>
             </div>
         );
