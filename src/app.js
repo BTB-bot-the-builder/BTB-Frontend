@@ -6,8 +6,11 @@ import LandingPageComponent from './components/LandingPageComponents/LandingPage
 import MainPageComponent from './components/MainPageComponents/MainPageComponent';
 import MainPageComponent2 from './components/MainPageComponents2/MainPageComponent2';
 import MainPageComponent3 from './components/MainPageComponents3/MainPageComponent3';
+import MyProjectsPageComponent from './components/MyProjectsPageComponents/MyProjectsPageComponent';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-// ReactDOM.render(<LandingPageComponent/>, document.getElementById("app"));
-ReactDOM.render(<MainPageComponent/>, document.getElementById("app"));
+ReactDOM.render(<LandingPageComponent/>, document.getElementById("app"));
+// ReactDOM.render(<MainPageComponent/>, document.getElementById("app"));
 // ReactDOM.render(<MainPageComponent2/>, document.getElementById("app"));
 // ReactDOM.render(<MainPageComponent3/>, document.getElementById("app"));
+// ReactDOM.render(<MyProjectsPageComponent/>, document.getElementById("app"));

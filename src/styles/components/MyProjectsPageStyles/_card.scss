@@ -1,0 +1,49 @@
+.project_card{
+    padding: 15px;
+    border-radius: 20px;
+    background: #B7DCFF;
+    height:211px;
+    width: 180px;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    margin: 1.1%;
+    margin-top: 1.5%;
+
+    .header{
+        display: flex;
+        h1{
+            padding: 3px;
+            font-size: 1.6rem;
+            font-weight: 450;
+        }
+        img{
+            margin-left: 30%;
+            height: 40px;
+            width: 40px;
+        }
+    }
+
+    .content{
+        .description{
+            margin-top: 10px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        h3{
+            margin-top: 45px;
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .date{
+            padding: 0%;
+            margin: 0%;
+            font-size: 0.7rem;
+            font-style: italic;
+            font-weight: 500;
+        }
+    }
+
+}

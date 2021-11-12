@@ -1,11 +1,7 @@
-$assetPath: "C:/Users/Asus/Desktop/BTB-Frontend-main/public/images";
+$assetPath: "C:/Users/Asus/Desktop/BTB-Latest/public/images";
+// $assetPath: "E:/react/bot-the-builder/public/images";
 
 .main {
-  background: url(#{$assetPath}/hexagon.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 110px 160px;
-  background-size: 450px 450px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -14,8 +10,14 @@ $assetPath: "C:/Users/Asus/Desktop/BTB-Frontend-main/public/images";
   min-height: 450px;
 
   .form {
+    background: url(#{$assetPath}/hexagon.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 265px 214px;
+    background-size: 416px 374px;
     margin-left: 30px;
     display: flex;
+
     input {
       padding: 0;
     }
