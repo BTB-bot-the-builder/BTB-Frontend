@@ -1,4 +1,6 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
+
 
 let Background = "http://icons.iconarchive.com/icons/hopstarter/face-avatars/256/Female-Face-FG-1-brunette-icon.png";
 
@@ -22,7 +24,7 @@ class MainPageBody2 extends React.Component {
                             <p>For better results, make sure that the questions belong to a specific domain.</p>
                             <p>Number of question answer pairs in the json should be large to get better performance</p>
                         </div>
-                        <button style={{top: '5%', right: '2%'}}>Next</button>
+                        <Link to='create-bot-step3'><button style={{top: '5%', right: '2%'}}>Next</button></Link>
                     </form>
                 </div>
                 <div className='image'>

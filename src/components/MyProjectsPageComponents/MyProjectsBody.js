@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "./Card";
-var clr = ['#B7DCFF', '#CCFFD7', '#FFD0D0'];
-var itr = 0;
+let clr = ['#B7DCFF', '#CCFFD7', '#FFD0D0'];
+let itr = 0;
 class MyProjectBody extends React.Component{
     render() {
         return (

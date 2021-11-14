@@ -1,3 +1,4 @@
+// $assetPath: "C:/Users/Asus/Desktop/BTB-Latest/public/images";
 $assetPath: "E:/react/bot-the-builder/public/images";
 
 .my_project_page_main{
@@ -6,4 +7,8 @@ $assetPath: "E:/react/bot-the-builder/public/images";
     background-attachment: fixed;
     background-position: center;
     background-size: 450px 450px;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: 'border-box';
 }

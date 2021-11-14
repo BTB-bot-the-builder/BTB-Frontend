@@ -1,6 +1,12 @@
 import React from "react";
 
+const styles = {
+    padding: '3px 19px'
+}
+
 class LoginNavbar extends React.Component{
+    
+    
     render() {
         return (
             <div className='LoginNavbar'>
