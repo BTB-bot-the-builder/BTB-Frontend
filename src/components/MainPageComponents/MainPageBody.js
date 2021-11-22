@@ -1,5 +1,6 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap';
+import {NavLink} from 'react-router-dom';
 
 let Background = "http://icons.iconarchive.com/icons/hopstarter/face-avatars/256/Female-Face-FG-1-brunette-icon.png";
 
@@ -93,7 +94,7 @@ class MainPageBody extends React.Component {
                                 </label>
                             </div>
                         </div>
-                        <button>Next</button>
+                        <NavLink to='create-bot-step2'><button>Next</button></NavLink>
                     </form>
                 </div>
                 <div className='image'>

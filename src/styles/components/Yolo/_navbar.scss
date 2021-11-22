@@ -1,0 +1,99 @@
+$assetPath: "C:/Users/Asus/Desktop/BTB-Latest/public/images";
+
+.Yolo-navbar{
+    padding: 10px;
+    background-color: #2E9AFD;
+    color: white;
+
+    .image {
+        opacity: 1;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 2px solid black;
+        background-image: url(#{$assetPath}/avatar.png);
+        background-position: center;
+        margin: 0;
+        padding: 0;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+}
+
+
+
+// .Yolo-navbar{
+
+//     padding-top: 10px;
+//     padding-left: 5%;
+//     padding-right: 10%;
+
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     z-index: 10;
+
+//     background-color: rgb(74, 74, 247);
+
+//     .left_content{
+//         margin-right: auto;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+
+//         #remove-decoration{
+//             text-decoration: none;
+//             color:black;
+//         }
+
+//         .logo {
+//             width: 85px;
+//             height: 82px;
+//             cursor: pointer;
+//             border-radius: 10%;
+//         }
+    
+//         p{
+//             font-size: 28px;
+//             margin-bottom: 0;
+//             padding: 0;
+//         }
+//     }
+
+//     .nav__links{
+//         padding: 0;
+//         margin-bottom: 0;
+//         display: flex;
+//         list-style-type: none;
+
+//         li{
+//             margin: 0 7%;
+//             a{
+//                 display: flex;
+//                 justify-content: center;
+//                 align-items: center;
+//                 font-size: 21px;
+//                 padding: 3px 19px;
+//                 cursor: pointer;
+//                 text-decoration:none;
+//                 color: black;
+//             }
+//         }
+
+//         li:nth-child(2){
+//             a{
+//                 border-radius: 10px;
+//                 background-color: black;
+//                 color: white;
+//             }
+//         }
+
+//         .googleButton{
+//             border-radius: 10%;
+//             border: 2px solid black;
+//         }
+//     }
+// }

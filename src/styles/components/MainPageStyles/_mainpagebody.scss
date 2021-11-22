@@ -50,12 +50,10 @@ $assetPath: "C:/Users/Asus/Desktop/BTB-Latest/public/images";
       $image-bg: gray;
       $image-border: white;
       $image-border-current: aqua;
-      // margin-bottom: 18%;
       display: flex;
       justify-content: space-between;
       
       span {
-        // margin-right: 178px;
         font-size: 1.35rem;
       }
 
@@ -92,7 +90,7 @@ $assetPath: "C:/Users/Asus/Desktop/BTB-Latest/public/images";
           opacity: 1;
         }
       }
-
+      
       .radio-img {
         > input {
           display: none;

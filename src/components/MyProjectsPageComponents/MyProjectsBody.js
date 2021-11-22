@@ -1,21 +1,28 @@
 import React from "react";
+import { Col, Container, Row } from "react-bootstrap";
 import Card from "./Card";
+
 let clr = ['#B7DCFF', '#CCFFD7', '#FFD0D0'];
 let itr = 0;
-class MyProjectBody extends React.Component{
+
+class MyProjectBody extends React.Component {
     render() {
         return (
             <div className="my_projects_body">
                 <h4>My Projects</h4>
-                <div className='cards'>
-                    {this.props.projects.map((project, index) => (
-                        <Card   ProjectName={project.name}
-                                description={project.description}
-                                date={project.date}
-                                key={project.name}
-                                color={clr[(itr++)%3]}/>
-                    ))}
-                </div>
+                <Container fluid style={{padding: '0'}}>
+                    <Row>
+                        {this.props.projects.map((project, index) => (
+                            <Col>
+                                <Card ProjectName={project.name}
+                                    description={project.description}
+                                    date={project.date}
+                                    key={project.name}
+                                    color={clr[(itr++) % 3]} />
+                            </Col>
+                        ))}
+                    </Row>
+                </Container>
             </div>
         );
     }
