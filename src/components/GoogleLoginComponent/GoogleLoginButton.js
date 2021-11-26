@@ -1,8 +1,7 @@
 import React from "react";
 import { GoogleLogin, GoogleLogout } from "react-google-login";
 
-const CLIENT_ID =
-  "635477069596-1oa79h6p3a8u1rrpbkd9v471mkoiihqv.apps.googleusercontent.com";
+const CLIENT_ID = "635477069596-1oa79h6p3a8u1rrpbkd9v471mkoiihqv.apps.googleusercontent.com";
 
 class GoogleLoginButton extends React.Component {
 
@@ -15,12 +14,12 @@ class GoogleLoginButton extends React.Component {
     };
 
     responseGoogleSuccess = (response) => {
-        console.log();
         let userInfo = {
-        name: response.profileObj.name,
-        emailId: response.profileObj.email,
+            name: response.profileObj.name,
+            emailId: response.profileObj.email,
         };
         this.setState({ userInfo, isLoggedIn: true });
+        this.props.HandleUserClickGoogleButton(this.state);
     };
 
     responseGoogleError = (response) => {
@@ -29,10 +28,11 @@ class GoogleLoginButton extends React.Component {
 
     logout = (response) => {
         let userInfo = {
-        name: "",
-        emailId: "",
+            name: "",
+            emailId: "",
         };
         this.setState({ userInfo, isLoggedIn: false });
+        this.props.HandleUserClickGoogleButton(this.state);
     };
 
     render() {
@@ -40,20 +40,22 @@ class GoogleLoginButton extends React.Component {
             <div>
                 {this.state.isLoggedIn ? (
                     <div>
-                    <GoogleLogout
-                        clientId={CLIENT_ID}
-                        buttonText="Logout"
-                        onLogoutSuccess={this.logout}
-                    ></GoogleLogout>
+                        <GoogleLogout
+                            clientId={CLIENT_ID}
+                            // icon={false}
+                            buttonText="Logout"
+                            onLogoutSuccess={this.logout}
+                        ></GoogleLogout>
                     </div>
                 ) : (
                     <GoogleLogin
-                    clientId={CLIENT_ID}
-                    buttonText="Login"
-                    onSuccess={this.responseGoogleSuccess}
-                    onFailure={this.responseGoogleError}
-                    isSignedIn={true}
-                    cookiePolicy={"single_host_origin"}
+                        clientId={CLIENT_ID}
+                        // icon={false}
+                        buttonText="Login"
+                        onSuccess={this.responseGoogleSuccess}
+                        onFailure={this.responseGoogleError}
+                        isSignedIn={true}
+                        cookiePolicy={"single_host_origin"}
                     />
                 )}
             </div>

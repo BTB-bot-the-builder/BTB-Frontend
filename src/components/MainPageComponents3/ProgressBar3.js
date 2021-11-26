@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import {Container, Row, Col} from 'react-bootstrap'
-
+import { NavLink } from 'react-router-dom';
 class ProgressBar3 extends React.Component {
     render() {
         return (
@@ -27,7 +27,7 @@ class ProgressBar3 extends React.Component {
                             <span className='text'>Set actions</span>
                         </Col>
                         <Col className='four'>
-                            <img className='logo' src='./images/logo.png' alt='image here'></img>
+                            <NavLink to='/'><img className='logo' src='./images/logo.png' alt='image here'></img></NavLink>
                         </Col>
                     </Row>
                 </Container>

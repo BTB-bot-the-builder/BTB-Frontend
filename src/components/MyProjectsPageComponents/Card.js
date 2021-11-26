@@ -2,11 +2,8 @@ import React from "react";
 
 class Card extends React.Component{
     render() {
-        var style = {
-            backgroundColor : this.props.color
-        };
         return (
-            <div className='project_card' style={style}>
+            <div className='project_card' style={{backgroundColor: this.props.color}}>
                 <div className='header'>
                     <h1>YOLO</h1>
                     <img src = './images/avatar.png' alt = 'image here'></img>

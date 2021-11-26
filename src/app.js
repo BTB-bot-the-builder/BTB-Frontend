@@ -7,10 +7,9 @@ import MainPageComponent from './components/MainPageComponents/MainPageComponent
 import MainPageComponent2 from './components/MainPageComponents2/MainPageComponent2';
 import MainPageComponent3 from './components/MainPageComponents3/MainPageComponent3';
 import MyProjectsPageComponent from './components/MyProjectsPageComponents/MyProjectsPageComponent';
+import NavBar from './components/Yolo/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter,Route,Switch,Link } from 'react-router-dom';
-import GoogleLoginButton from './components/GoogleLoginComponent/GoogleLoginButton';
-
 
 class PageNotFoundComponent extends React.Component{
     render(){
@@ -26,11 +25,12 @@ class PageNotFoundComponent extends React.Component{
 const routes = (
     <BrowserRouter>
         <Switch>
-            <Route exact={true} path='/' component={GoogleLoginButton}/>
+            <Route exact={true} path='/' component={LandingPageComponent} />
             <Route path='/create-bot-step1' component={MainPageComponent}/>
             <Route path='/create-bot-step2' component={MainPageComponent2}/>
             <Route path='/create-bot-step3' component={MainPageComponent3}/>
-            <Route path='/my-projects' component={MyProjectsPageComponent}/>
+            <Route path='/my-projects' component={MyProjectsPageComponent} />
+            <Route path='/navbar' component={NavBar}/>
             <Route component={PageNotFoundComponent}/>
         </Switch>
     </BrowserRouter>
