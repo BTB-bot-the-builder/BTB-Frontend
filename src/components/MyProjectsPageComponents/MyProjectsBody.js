@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Card from "./Card";
-
+import {NavLink} from 'react-router-dom';
 let clr = ['#B7DCFF', '#CCFFD7', '#FFD0D0'];
 let itr = 0;
 

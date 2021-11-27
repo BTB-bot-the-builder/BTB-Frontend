@@ -1,7 +1,7 @@
 import React from "react";
 import LoginNavbar from "./LoginNavbar";
 import MyProjectBody from "./MyProjectsBody";
-
+import DynamicNavbar from "../Navbar/DynamicNavbar";
 class MyProjectsPageComponent extends React.Component{
     state = {
         projects: [
@@ -26,7 +26,7 @@ class MyProjectsPageComponent extends React.Component{
     render() {
         return (
             <div className='my_project_page_main'>
-                <LoginNavbar></LoginNavbar>
+                <DynamicNavbar></DynamicNavbar>
                 <MyProjectBody projects = {this.state.projects}></MyProjectBody>
             </div>
         );

@@ -12,14 +12,27 @@ $assetPath: "C:/Users/Asus/Desktop/BTB-Latest/public/images";
   .form {
     background: url(#{$assetPath}/hexagon.png);
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 265px 214px;
+    background-position: 60px 0px;
     background-size: 416px 374px;
     margin-left: 30px;
     display: flex;
 
-    input {
+    input,textarea {
       padding: 0;
+      outline: none;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+      transition: .3s;
+    }
+
+    input:focus{
+      border-color: blue;
+      box-shadow: 0 0 8px 0 dodgerblue;
+    }
+
+    textarea:focus{
+      border-color: blue;
+      box-shadow: 0 0 8px 0 dodgerblue;
     }
 
     .name {
@@ -108,7 +121,8 @@ $assetPath: "C:/Users/Asus/Desktop/BTB-Latest/public/images";
 
     button {
       position: relative;
-      top: 21%;
+      top:22%;
+      color:white;
       float: right;
       border-radius: 10px;
       background: #56ac00;
