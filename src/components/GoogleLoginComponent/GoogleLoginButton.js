@@ -19,7 +19,7 @@ class GoogleLoginButton extends React.Component {
             emailId: response.profileObj.email,
         };
         this.setState({ userInfo, isLoggedIn: true });
-        this.props.HandleUserClickGoogleButton(this.state);
+        this.props.HandleUserLogin();
     };
 
     responseGoogleError = (response) => {
@@ -32,7 +32,7 @@ class GoogleLoginButton extends React.Component {
             emailId: "",
         };
         this.setState({ userInfo, isLoggedIn: false });
-        this.props.HandleUserClickGoogleButton(this.state);
+        this.props.HandleUserLogout();
     };
 
     render() {
@@ -50,7 +50,6 @@ class GoogleLoginButton extends React.Component {
                 ) : (
                     <GoogleLogin
                         clientId={CLIENT_ID}
-                        // icon={false}
                         buttonText="Login"
                         onSuccess={this.responseGoogleSuccess}
                         onFailure={this.responseGoogleError}

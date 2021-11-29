@@ -1,6 +1,4 @@
 import React from "react";
-// import NavBar from "./Navbar";
-// import LoginNavbar from "./LoginNavbar";
 import { Link, NavLink } from "react-router-dom";
 import GoogleLoginButton from '../GoogleLoginComponent/GoogleLoginButton';
 import { Redirect } from "react-router";
@@ -13,14 +11,21 @@ class DynamicNavbar extends React.Component{
         isLoggedIn : false,
     };
 
-    HandleUserClickGoogleButton = (prevState) => {
+    HandleUserLogin = (prevState) => {
         this.setState(
             {
-                isLoggedIn : !prevState.isLoggedIn
+                isLoggedIn : true
             }
         );
     }
 
+    HandleUserLogout = (prevState) => {
+        this.setState(
+            {
+                isLoggedIn : false
+            }
+        );
+    }
 
     render(){
         return (
@@ -35,7 +40,7 @@ class DynamicNavbar extends React.Component{
                         <li><Link to='/'>Documentation</Link></li>
                         <li><Link to='create-bot-step1'>Create a Project</Link></li>
                         <li><Link to='my-projects'>My Projects</Link></li>
-                        <li className='googleButton'><GoogleLoginButton HandleUserClickGoogleButton={this.HandleUserClickGoogleButton}/></li>
+                        <li className='googleButton'><GoogleLoginButton HandleUserLogout={this.HandleUserLogout}/></li>
                     </ul>
                 </div>
                 
@@ -47,7 +52,7 @@ class DynamicNavbar extends React.Component{
                     </div>
                     <ul className='nav__links'>
                         <li><a href='#'>Documentation</a></li>
-                        <GoogleLoginButton HandleUserClickGoogleButton={this.HandleUserClickGoogleButton}/>
+                        <GoogleLoginButton HandleUserLogin={this.HandleUserLogin}/>
                     </ul>
                 </div>
             )}

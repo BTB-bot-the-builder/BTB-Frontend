@@ -4,6 +4,7 @@ import Body from './Body';
 import CustomChatbot from './CustomChatbot';
 import Footer from '../Utils/Footer';
 import DynamicNavbar from '../Navbar/DynamicNavbar';
+import MyChatbot from './MyChatbot';
 const styleline = {
     margin: 0,
     padding: 0,
@@ -18,6 +19,7 @@ class LandingPageComponent extends React.Component{
                 <DynamicNavbar></DynamicNavbar>
                 <Body></Body>
                 <Footer></Footer>
+                <MyChatbot></MyChatbot>
             </div>
         );
     }
