@@ -1,7 +1,8 @@
 import React from "react";
 import LoginNavbar from "./LoginNavbar";
 import MyProjectBody from "./MyProjectsBody";
-import DynamicNavbar from "../Navbar/DynamicNavbar";
+import DynamicNavbar from "../Utils/DynamicNavbar";
+
 class MyProjectsPageComponent extends React.Component{
     state = {
         projects: [

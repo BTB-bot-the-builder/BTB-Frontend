@@ -5,7 +5,7 @@ class Body extends React.Component {
     render() {
         return (
             <div className="body">
-                <Container style={{padding : '0'}}>
+                <Container style={{ padding: '0' }}>
                     <Row className='first'>
                         <Col className='left-content'>
                             <div>
@@ -18,15 +18,15 @@ class Body extends React.Component {
                             <img src='https://www.insegment.com/blog/wp-content/uploads/2020/11/chatbot-marketing.gif' alt='gif here'></img>
                         </Col>
                     </Row>
-
+                    <Row className='features'>Features</Row>
                     <Row className='second'>
                         <Col className='left-content'>
-                            <img src='images/chatDemo.png' alt='chatDemo'></img>
+                            <img src='https://trymondo.com/wp-content/uploads/2020/11/Chatbot.gif' alt='chatDemo'></img>
                         </Col>
                         <Col className='right-content'>
                             <div>
                                 <h2 id='HeadingMarketingText' >Easy to use interface<span className='Number'>01</span></h2>
-                                <p className='TextMarketingText'>Description of the feature will be here in deatil and will tell user clearly about the features we are providing</p>
+                                <p className='TextMarketingText'>Description of the feature will be here in detail and will tell user clearly about the features we are providing</p>
                             </div>
                         </Col>
                     </Row>
@@ -35,11 +35,11 @@ class Body extends React.Component {
                         <Col className='left-content'>
                             <div>
                                 <h2 id='HeadingMarketingText'><span className='Number'>02</span>Easy to integrate bots</h2>
-                                <p className='TextMarketingText'>Description of the feature will be here in deatil and will tell user clearly about the features we are providing</p>
+                                <p className='TextMarketingText'>Description of the feature will be here in detail and will tell user clearly about the features we are providing</p>
                             </div>
                         </Col>
                         <Col className='right-content'>
-                            <img src='images/chatDemo.png' alt='chatDemo'></img>
+                            <img src='https://media1.giphy.com/media/ZgTR3UQ9XAWDvqy9jv/giphy.gif?cid=790b76113a0d53ebf4a9c16c2ad8c0b93ffb1b509e6af8ee&rid=giphy.gif&ct=g' alt='chatDemo'></img>
                         </Col>
                     </Row>
 
@@ -50,7 +50,7 @@ class Body extends React.Component {
                         <Col className='right-content'>
                             <div>
                                 <h2 id='HeadingMarketingText'>Test your bots<span className='Number'>03</span></h2>
-                                <p className='TextMarketingText'>Description of the feature will be here in deatil and will tell user clearly about the features we are providing</p>
+                                <p className='TextMarketingText'>Description of the feature will be here in detail and will tell user clearly about the features we are providing</p>
                             </div>
                         </Col>
                     </Row>

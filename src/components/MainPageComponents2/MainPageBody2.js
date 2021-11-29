@@ -27,9 +27,7 @@ class MainPageBody2 extends React.Component {
                         <Link to='create-bot-step3'><button style={{top: '5%', right: '3%'}}>Next</button></Link>
                     </form>
                 </div>
-                <div className='image'>
-                    <img src='https://www.insegment.com/blog/wp-content/uploads/2020/11/chatbot-marketing.gif' alt='gif here'></img>
-                </div>
+                <img src='https://www.ramco.com/hubfs/chatbot.gif' alt='gif here'></img>
             </div>
         );
     }

@@ -42,7 +42,6 @@ class GoogleLoginButton extends React.Component {
                     <div>
                         <GoogleLogout
                             clientId={CLIENT_ID}
-                            // icon={false}
                             buttonText="Logout"
                             onLogoutSuccess={this.logout}
                         ></GoogleLogout>

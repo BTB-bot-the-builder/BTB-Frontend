@@ -11,11 +11,11 @@ class MainPageBody3 extends React.Component {
                         <div className="main_page_form3">
                             <div className='page_names'>
                                 <span className="input_label1">Name</span>
-                                <textarea type='text' name='home' rows='5' cols='20' placeholder="Home" ></textarea>
+                                <input type='text' name='home' size='15' placeholder="Home" ></input>
                             </div>
                             <div className='page_urls'>
                                 <span className="input_label2">URL</span>
-                                <textarea type='url' name='home_url' rows='5' cols='45' placeholder="www.home.com"></textarea>
+                                <input type='url' name='home_url' size='40' placeholder="www.home.com"></input>
                             </div>
                         </div>
                         <div className='add-button'>
@@ -24,9 +24,7 @@ class MainPageBody3 extends React.Component {
                         <button style={{position: 'relative', top: '83%'}}>Deploy</button>
                     </form>
                 </div>
-                <div className='image'>
-                    <img src='https://www.insegment.com/blog/wp-content/uploads/2020/11/chatbot-marketing.gif' alt='gif here'></img>
-                </div>
+                <img src='https://www.ramco.com/hubfs/chatbot.gif' alt='gif here'></img>
             </div>
         );
     }

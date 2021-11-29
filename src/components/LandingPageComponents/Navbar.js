@@ -2,6 +2,7 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import GoogleLoginButton from '../GoogleLoginComponent/GoogleLoginButton';
 import LoginNavbar from '../MyProjectsPageComponents/LoginNavbar';
+
 class NavBar extends React.Component {
 
     state = {

@@ -1,10 +1,9 @@
 import React from 'react';
-import NavBar from './Navbar'
 import Body from './Body';
-import CustomChatbot from './CustomChatbot';
 import Footer from '../Utils/Footer';
-import DynamicNavbar from '../Navbar/DynamicNavbar';
+import DynamicNavbar from '../Utils/DynamicNavbar';
 import MyChatbot from './MyChatbot';
+
 const styleline = {
     margin: 0,
     padding: 0,
