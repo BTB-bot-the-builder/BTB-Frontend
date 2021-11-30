@@ -7,7 +7,7 @@ class MainPageBody3 extends React.Component {
         return (
             <div className='main' style={{alignItems: 'flex-start'}}>
                 <div className='form' style={{marginTop: '18px', paddingBottom: '235px'}}>
-                    <form>
+                    <form style={{marginTop: '16%'}}>
                         <div className="main_page_form3">
                             <div className='page_names'>
                                 <span className="input_label1">Name</span>
@@ -21,7 +21,7 @@ class MainPageBody3 extends React.Component {
                         <div className='add-button'>
                             <button>Add</button>
                         </div>
-                        <button style={{position: 'relative', top: '83%'}}>Deploy</button>
+                        <button style={{position: 'relative', top: '141%'}}>Deploy</button>
                     </form>
                 </div>
                 <img src='https://www.ramco.com/hubfs/chatbot.gif' alt='gif here'></img>

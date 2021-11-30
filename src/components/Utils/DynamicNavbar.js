@@ -3,6 +3,16 @@ import { Link, NavLink } from "react-router-dom";
 import GoogleLoginButton from '../GoogleLoginComponent/GoogleLoginButton';
 import CreateModal from "./Modal";
 
+const buttonStyle = {
+    fontSize: '22px',
+    fontFamily: 'inherit',
+    background: '#2E9AFD',
+    color: 'white',
+    border: 'none',
+    borderRadius: '10px',
+    padding: '4px 14px'
+}
+
 class DynamicNavbar extends React.Component {
 
     state = {
@@ -41,7 +51,7 @@ class DynamicNavbar extends React.Component {
             }
         })
     }
-
+    
     render() {
         return (
             <div>
@@ -54,7 +64,7 @@ class DynamicNavbar extends React.Component {
                         </div>
                         <ul className='nav__links'>
                             <li><Link to='/'>Documentation</Link></li>
-                            <button onClick={this.handleShowModal}>Create a Project</button>
+                            <button style={buttonStyle} onClick={this.handleShowModal}>Create a Project</button>
                             <li><Link to='my-projects'>My Projects</Link></li>
                             <li className='googleButton'><GoogleLoginButton HandleUserLogout={this.HandleUserLogout} /></li>
                         </ul>
