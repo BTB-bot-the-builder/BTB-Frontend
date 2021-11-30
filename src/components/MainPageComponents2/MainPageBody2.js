@@ -24,12 +24,10 @@ class MainPageBody2 extends React.Component {
                             <p>For better results, make sure that the questions belong to a specific domain.</p>
                             <p>Number of question answer pairs in the json should be large to get better performance</p>
                         </div>
-                        <Link to='create-bot-step3'><button style={{top: '5%', right: '2%'}}>Next</button></Link>
+                        <Link to='create-bot-step3'><button style={{top: '12%', right: '3%'}}>Next</button></Link>
                     </form>
                 </div>
-                <div className='image'>
-                    <img src='https://www.insegment.com/blog/wp-content/uploads/2020/11/chatbot-marketing.gif' alt='gif here'></img>
-                </div>
+                <img src='https://www.ramco.com/hubfs/chatbot.gif' alt='gif here'></img>
             </div>
         );
     }

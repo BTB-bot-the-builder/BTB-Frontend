@@ -10,16 +10,29 @@ $assetPath: "E:/react/bot-the-builder/public/images";
   min-height: 450px;
 
   .form {
-    background: url(#{$assetPath}/hexagon.png);
+    background-image: url("https://cdn.discordapp.com/attachments/914484290484596737/914844985935945788/unknown.png");
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 265px 214px;
-    background-size: 416px 374px;
+    background-position: center;
+    background-size: 412px 377px;
     margin-left: 30px;
     display: flex;
 
-    input {
+    input,textarea {
       padding: 0;
+      outline: none;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+      transition: .3s;
+    }
+
+    input:focus{
+      border-color: blue;
+      box-shadow: 0 0 8px 0 dodgerblue;
+    }
+
+    textarea:focus{
+      border-color: blue;
+      box-shadow: 0 0 8px 0 dodgerblue;
     }
 
     .name {
@@ -71,15 +84,21 @@ $assetPath: "E:/react/bot-the-builder/public/images";
         padding: 5px;
         margin: 2px;
         transition: all 0.3s ease;
+
+        img{
+          width: 40px;
+          height: 40px;
+          border-radius: 25px;
+        }
       }
 
       .image {
         opacity: 1;
-        width: 40px;
-        height: 40px;
+        width: 20px;
+        height: 20px;
         border-radius: 50%;
         border: 2px solid black;
-        background-image: url(#{$assetPath}/avatar.png);
+        background-image: url(https://static.vecteezy.com/system/resources/thumbnails/002/002/403/small/man-with-beard-avatar-character-isolated-icon-free-vector.jpg);
         background-position: center center;
         background-color: $image-bg;
         display: inline-block;
@@ -108,7 +127,8 @@ $assetPath: "E:/react/bot-the-builder/public/images";
 
     button {
       position: relative;
-      top: 21%;
+      top:22%;
+      color:white;
       float: right;
       border-radius: 10px;
       background: #56ac00;
@@ -117,11 +137,7 @@ $assetPath: "E:/react/bot-the-builder/public/images";
     }
   }
 
-  .image {
-    img {
-      position: relative;
-      width: 450px;
-      height: 450px;
-    }
+  img {
+    width: 36%;
   }
 }

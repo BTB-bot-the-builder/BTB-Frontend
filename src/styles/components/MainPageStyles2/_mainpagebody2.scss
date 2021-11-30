@@ -1,6 +1,3 @@
-// $assetPath: "C:/Users/Asus/Desktop/BTB-Latest/public/images";
-$assetPath: "E:/react/bot-the-builder/public/imagess";
-
 .main {
   .form {
     .fileUpload{
@@ -13,6 +10,10 @@ $assetPath: "E:/react/bot-the-builder/public/imagess";
           font-size: 1.35rem;
         }
       }
+    }
+
+    input[type=file]{
+      border: none;
     }
 
     input[type=file]::file-selector-button {
@@ -30,6 +31,8 @@ $assetPath: "E:/react/bot-the-builder/public/imagess";
         font-style: italic;
       }
       img{
+        width: 387px;
+        height: 131px;
         padding: 0.7rem;
         background-color: white;
         border: 2px solid #E1E4E8;

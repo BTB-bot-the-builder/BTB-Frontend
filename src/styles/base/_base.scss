@@ -1,16 +1,32 @@
-html{
-    size: 62.5%;
+html {
+  size: 62.5%;
 }
 
-body{
-    font-family: Helvetica, Arial, sans-serif;
-    font-size : 1.4rem;
+// $assetPath: "C:/Users/Asus/Desktop/BTB-Latest/public/images";
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
 }
 
-button{
-    cursor: pointer;
+button {
+  cursor: pointer;
 }
 
-button:disabled{
-    cursor: default;
+button:disabled {
+  cursor: default;
+}
+
+input,
+textarea {
+  padding: 0;
+  outline: none;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: blue;
+  box-shadow: 0 0 8px 0 dodgerblue;
 }
