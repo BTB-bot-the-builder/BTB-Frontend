@@ -15,25 +15,32 @@ const buttonStyle = {
 
 class DynamicNavbar extends React.Component {
 
-    state = {
-        isLoggedIn: false,
-        showModal: undefined
-    };
+    constructor(props) {
+        super(props);
+        this.state = {
+            isLoggedIn: false,
+            showModal: undefined
+        };
+        this.HandleUserLogin = this.HandleUserLogin.bind(this);
+        this.HandleUserLogout = this.HandleUserLogout.bind(this);
+    }
 
-    HandleUserLogin = () => {
+    HandleUserLogin(){
         this.setState(() => {
             return {
                 isLoggedIn: true
             }
-        })
+        });
+        this.props.HandleUserLoginMain();
     }
 
-    HandleUserLogout = () => {
+    HandleUserLogout(){
         this.setState(() => {
             return {
                 isLoggedIn: false
             }
-        })
+        });
+        this.props.HandleUserLogoutMain();
     }
 
     handleShowModal = () => {
@@ -66,7 +73,7 @@ class DynamicNavbar extends React.Component {
                             <li><Link to='/'>Documentation</Link></li>
                             <button style={buttonStyle} onClick={this.handleShowModal}>Create a Project</button>
                             <li><Link to='my-projects'>My Projects</Link></li>
-                            <li className='googleButton'><GoogleLoginButton HandleUserLogout={this.HandleUserLogout} /></li>
+                            <li className='googleButton'><GoogleLoginButton HandleUserLoginMain={this.HandleUserLogin} HandleUserLogoutMain={this.HandleUserLogout} /></li>
                         </ul>
                     </div>
 
@@ -78,7 +85,7 @@ class DynamicNavbar extends React.Component {
                         </div>
                         <ul className='nav__links'>
                             <li><a href='#'>Documentation</a></li>
-                            <GoogleLoginButton HandleUserLogin={this.HandleUserLogin} />
+                            <GoogleLoginButton HandleUserLoginMain={this.HandleUserLogin} HandleUserLogoutMain={this.HandleUserLogout}/>
                         </ul>
                     </div>
                 )}
