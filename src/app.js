@@ -31,23 +31,28 @@ class MyRoutes extends React.Component{
             isLoggedIn: false,
             jwt_token: "",
             userID: -1,
+            projectID: -1,
         };
         this.HandleUserLogin = this.HandleUserLogin.bind(this);
         this.HandleUserLogout = this.HandleUserLogout.bind(this);
+        this.HandleNewProjectID = this.HandleNewProjectID.bind(this);
     }
 
     componentDidMount(){
         const json1 = localStorage.getItem("isLoggedIn");
         const json2 = localStorage.getItem("jwt");
         const json3 = localStorage.getItem("uid");
+        const json4 = localStorage.getItem("pid");
         const isLoggedIn = JSON.parse(json1);
         const jwt = JSON.parse(json2);
         const uid = JSON.parse(json3);
+        const pid = JSON.parse(json4);
         this.setState(() => {
             return {
                 isLoggedIn: isLoggedIn,
                 jwt_token: jwt,
-                userID: uid
+                userID: uid,
+                projectID: pid,
             };
         });
     }
@@ -56,11 +61,20 @@ class MyRoutes extends React.Component{
         const isloggedin = JSON.stringify(this.state.isLoggedIn);
         const jwt = JSON.stringify(this.state.jwt_token);
         const uid = JSON.stringify(this.state.userID);
+        const pid = JSON.stringify(this.state.projectID);
         localStorage.setItem("isLoggedIn", isloggedin);
         localStorage.setItem("jwt", jwt);
         localStorage.setItem("uid", uid);
+        localStorage.setItem("pid", pid);
     }
 
+    HandleNewProjectID(pid){
+        this.setState(() => {
+            return {
+                projectID: pid,
+            };
+        });
+    }
 
     HandleUserLogin(token, uid){
         this.setState(() => {
@@ -87,7 +101,7 @@ class MyRoutes extends React.Component{
             <BrowserRouter>
                 {this.state.isLoggedIn? (
                     <Routes>
-                        <Route path='/' element={<HomePageComponent HandleUserLogoutMain={this.HandleUserLogout}/>} />
+                        <Route path='/' element={<HomePageComponent HandleNewProjectID={this.HandleNewProjectID} userID={this.state.userID} jwt_token={this.state.jwt_token} HandleUserLogoutMain={this.HandleUserLogout}/>} />
                         <Route path='/create-bot-step1' element={<MainPageComponent/>}/>
                         <Route path='/create-bot-step2' element={<MainPageComponent2/>}/>
                         <Route path='/create-bot-step3' element={<MainPageComponent3/>}/>

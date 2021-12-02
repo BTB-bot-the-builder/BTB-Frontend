@@ -4,7 +4,7 @@ import Footer from '../Utils/Footer';
 import MyChatbot from './MyChatbot';
 import { NavLink,Link } from 'react-router-dom';
 import GoogleLoginButton from '../GoogleLoginComponent/GoogleLoginButton';
-import CreateModal from "./Modal";
+import CreateModal from "./CreateModal";
 
 const styleline = {
     margin: 0,
@@ -58,7 +58,7 @@ class HomePageComponent extends React.Component{
             <div style={styleline}>
                 
             <div className='LoginNavbar'>
-                <CreateModal handleCloseModal={this.handleCloseModal} showModal={this.state.showModal} />
+                <CreateModal userID={this.props.userID} HandleNewProjectID={this.props.HandleNewProjectID} jwt_token={this.props.jwt_token} handleCloseModal={this.handleCloseModal} showModal={this.state.showModal} />
                 <div className='left_content'>
                     <img className='logo' src='./images/logo.png'></img>
                     <p><NavLink id='remove-decoration' to="">Bot the Builder</NavLink></p>

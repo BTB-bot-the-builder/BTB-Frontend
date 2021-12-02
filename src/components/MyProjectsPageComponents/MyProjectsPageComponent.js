@@ -1,6 +1,6 @@
 import React from "react";
 import MyProjectBody from "./MyProjectsBody";
-import CreateModal from "../HomePageComponent/Modal";
+import CreateModal from "../HomePageComponent/CreateModal";
 import { NavLink,Link } from 'react-router-dom';
 import GoogleLoginButton from '../GoogleLoginComponent/GoogleLoginButton';
 
