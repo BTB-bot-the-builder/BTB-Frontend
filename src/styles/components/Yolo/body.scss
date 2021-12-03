@@ -1,0 +1,22 @@
+.yolo-body{
+    margin: 10px 10px 10px 40px;
+    .paper{
+        border-radius: 20px;
+        padding: 40px 40px;
+        height: 100%;
+        max-width: 370px;
+        background: #2E9AFD33;
+
+        h3,p{
+            font-size: 30px;
+            margin: 0;
+            text-align: center;
+        }
+
+        p{
+            padding-top: 10px;
+            font-size: 24px;
+            color: #2E9AFD;
+        }
+    }
+}

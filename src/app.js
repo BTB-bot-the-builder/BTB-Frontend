@@ -9,7 +9,9 @@ import MainPageComponent3 from './components/MainPageComponents3/MainPageCompone
 import MyProjectsPageComponent from './components/MyProjectsPageComponents/MyProjectsPageComponent';
 import NavBar from './components/Yolo/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter,Route,Switch,Link } from 'react-router-dom';
+import { BrowserRouter,Route,Link,Routes } from 'react-router-dom';
+import HomePageComponent from './components/HomePageComponent/HomePageComponent';
+import MainPageOfYolo from './components/Yolo/Main'
 
 class PageNotFoundComponent extends React.Component{
     render(){
@@ -22,23 +24,102 @@ class PageNotFoundComponent extends React.Component{
     }
 }
 
-const routes = (
-    <BrowserRouter>
-        <Switch>
-            <Route exact={true} path='/' component={LandingPageComponent} />
-            <Route path='/create-bot-step1' component={MainPageComponent}/>
-            <Route path='/create-bot-step2' component={MainPageComponent2}/>
-            <Route path='/create-bot-step3' component={MainPageComponent3}/>
-            <Route path='/my-projects' component={MyProjectsPageComponent} />
-            <Route path='/navbar' component={NavBar}/>
-            <Route component={PageNotFoundComponent}/>
-        </Switch>
-    </BrowserRouter>
-);
+class MyRoutes extends React.Component{
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            isLoggedIn: false,
+            jwt_token: "",
+            userID: -1,
+            projectID: -1,
+        };
+        this.HandleUserLogin = this.HandleUserLogin.bind(this);
+        this.HandleUserLogout = this.HandleUserLogout.bind(this);
+        this.HandleNewProjectID = this.HandleNewProjectID.bind(this);
+    }
+
+    componentDidMount(){
+        const json1 = localStorage.getItem("isLoggedIn");
+        const json2 = localStorage.getItem("jwt");
+        const json3 = localStorage.getItem("uid");
+        const json4 = localStorage.getItem("pid");
+        const isLoggedIn = JSON.parse(json1);
+        const jwt = JSON.parse(json2);
+        const uid = JSON.parse(json3);
+        const pid = JSON.parse(json4);
+        this.setState(() => {
+            return {
+                isLoggedIn: isLoggedIn,
+                jwt_token: jwt,
+                userID: uid,
+                projectID: pid,
+            };
+        });
+    }
+
+    componentDidUpdate(){
+        const isloggedin = JSON.stringify(this.state.isLoggedIn);
+        const jwt = JSON.stringify(this.state.jwt_token);
+        const uid = JSON.stringify(this.state.userID);
+        const pid = JSON.stringify(this.state.projectID);
+        localStorage.setItem("isLoggedIn", isloggedin);
+        localStorage.setItem("jwt", jwt);
+        localStorage.setItem("uid", uid);
+        localStorage.setItem("pid", pid);
+    }
+
+    HandleNewProjectID(pid){
+        this.setState(() => {
+            return {
+                projectID: pid,
+            };
+        });
+    }
+
+    HandleUserLogin(token, uid){
+        this.setState(() => {
+            return {
+                isLoggedIn: true,
+                jwt_token: token,
+                userID: uid,
+            };
+        });
+    }
+
+    HandleUserLogout(){
+        this.setState(() => {
+            return {
+                isLoggedIn: false,
+                jwt_token: "",
+                userID: -1,
+            };
+        });
+    }
+
+    render(){
+        return(
+            <BrowserRouter>
+                {this.state.isLoggedIn? (
+                    <Routes>
+                        <Route path='/' element={<HomePageComponent HandleNewProjectID={this.HandleNewProjectID} userID={this.state.userID} jwt_token={this.state.jwt_token} HandleUserLogoutMain={this.HandleUserLogout}/>} />
+                        <Route path='/create-bot-step1' element={<MainPageComponent/>}/>
+                        <Route path='/create-bot-step2' element={<MainPageComponent2/>}/>
+                        <Route path='/create-bot-step3' element={<MainPageComponent3/>}/>
+                        <Route path='/my-projects' element={<MyProjectsPageComponent/>} />
+                        <Route path='/yolo' element={<MainPageOfYolo/>}/>
+                        <Route path='*' element={<PageNotFoundComponent/>}/>
+                    </Routes>
+                ) : (
+                    <Routes>
+                        <Route path='/' element={<LandingPageComponent HandleUserLoginMain={this.HandleUserLogin}/>} />
+                        <Route path='*' element={<PageNotFoundComponent/>}/>
+                    </Routes>
+                ) } 
+            </BrowserRouter>
+        );
+    }
+}
 
 
-ReactDOM.render(routes, document.getElementById("app"));
-// ReactDOM.render(<MainPageComponent/>, document.getElementById("app"));
-// ReactDOM.render(<MainPageComponent2/>, document.getElementById("app"));
-// ReactDOM.render(<MainPageComponent3/>, document.getElementById("app"));
-// ReactDOM.render(<MyProjectsPageComponent/>, document.getElementById("app"));
+ReactDOM.render(<MyRoutes/>, document.getElementById("app"));

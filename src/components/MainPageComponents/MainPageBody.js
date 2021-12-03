@@ -4,6 +4,21 @@ import {NavLink} from 'react-router-dom';
 
 let Background = "http://icons.iconarchive.com/icons/hopstarter/face-avatars/256/Female-Face-FG-1-brunette-icon.png";
 
+const Validation = (e) => {
+    const name = e.target.elements.name.value;
+    const desc = e.target.elements.description.value;
+    const avatar = e.target.elements.layout.value;
+
+    let error = [];
+
+    if (name.length > 0) {
+        if (name[0] === ' ') error.push('Remove space from front of name');
+    }
+    else {
+        error.push('Enter name');
+    }
+}
+
 class MainPageBody extends React.Component {
     render() {
         return (
@@ -13,13 +28,13 @@ class MainPageBody extends React.Component {
                         <div className='name'>
                             <label>
                                 <span>Name your bot:</span>
-                                <input type='text' name='name' size='31'></input>
+                                <input style={{ margin: '5px 0px 0px 0px', padding: '3px 0px 3px 9px' }} type='text' name='name' size='31'></input>
                             </label>
                         </div>
                         <div className='description'>
                             <label>
                                 <span>Description:</span>
-                                <textarea name="description" rows="3" cols="33"></textarea>
+                                <textarea style={{ margin: '5px 0px 0px 0px', padding: '3px 0px 3px 9px' }} name="description" rows="3" cols="33"></textarea>
                             </label>
                         </div>
                         <div className='avatar'>
