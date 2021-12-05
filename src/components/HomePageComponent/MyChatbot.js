@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Chat, addResponseMessage, addLinkSnippet, addUserMessage } from 'react-chat-popup';
 import avatar from '../images/avatar.png';
 import axios from 'axios';
-import { Redirect } from 'react-router';
 import { useEffect } from 'react';
 
 const Contact = (props) => {
@@ -10,7 +9,7 @@ const Contact = (props) => {
   console.log(props);
 
   useEffect(() => {
-    window.location.href = "https://"+props.link;
+    window.location.href = "https://" + props.link;
   }, []);
 
   return (
@@ -43,7 +42,7 @@ class MyChatbot extends Component {
           addLinkSnippet(
             {
               title: res.data.data,
-              link:  res.data.link,
+              link: res.data.link,
               target: '_blank'
             }
           )

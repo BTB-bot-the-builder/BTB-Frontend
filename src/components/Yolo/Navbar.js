@@ -1,7 +1,5 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
-import { Link, NavLink } from "react-router-dom";
-import GoogleLoginButton from '../GoogleLoginComponent/GoogleLoginButton';
 
 class NavBar extends React.Component {
     render() {
@@ -9,13 +7,13 @@ class NavBar extends React.Component {
         return (
             <div className='Yolo-navbar'>
                 <Container style={{display: 'flex', justifyContent: 'space-between'}} fluid>
-                    <Row>
-                        <h3>Project Name</h3>
-                        <h5>YOLO</h5>
+                    <Row className="leftContent">
+                        <h1>Project Name</h1>
+                        <h3>YOLO</h3>
                         <p>Hi, I am AI generated bot.</p>
                     </Row>
-                    <Row style={{display: 'flex', justifyContent: 'end', alignContent: 'end'}}>
-                        <div className="image"></div>
+                    <Row className='rightContent'>
+                        <img src='https://avataaars.io/?avatarStyle=Circle&topType=LongHairCurly&accessoriesType=Prescription01&hairColor=Black&facialHairType=Blank&clotheType=GraphicShirt&clotheColor=Gray01&graphicType=Skull&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light'/>
                         <p>Created on: 25-6-2021</p>
                     </Row>
                 </Container>

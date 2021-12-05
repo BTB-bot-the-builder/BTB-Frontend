@@ -2,9 +2,10 @@ import React from 'react';
 import Body from './Body';
 import Footer from '../Utils/Footer';
 import MyChatbot from './MyChatbot';
-import { NavLink,Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import GoogleLoginButton from '../GoogleLoginComponent/GoogleLoginButton';
 import CreateModal from "./CreateModal";
+import { Button } from '@mui/material';
 
 const styleline = {
     margin: 0,
@@ -22,7 +23,7 @@ const buttonStyle = {
     padding: '4px 14px'
 }
 
-class HomePageComponent extends React.Component{
+class HomePageComponent extends React.Component {
 
     constructor(props) {
         super(props);
@@ -33,7 +34,7 @@ class HomePageComponent extends React.Component{
         this.HandleUserLogout = this.HandleUserLogout.bind(this);
     }
 
-    HandleUserLogout(){
+    HandleUserLogout() {
         this.props.HandleUserLogoutMain();
     }
 
@@ -56,20 +57,20 @@ class HomePageComponent extends React.Component{
     render() {
         return (
             <div style={styleline}>
-                
-            <div className='LoginNavbar'>
-                <CreateModal userID={this.props.userID} HandleNewProjectID={this.props.HandleNewProjectID} jwt_token={this.props.jwt_token} handleCloseModal={this.handleCloseModal} showModal={this.state.showModal} />
-                <div className='left_content'>
-                    <img className='logo' src='./images/logo.png'></img>
-                    <p><NavLink id='remove-decoration' to="">Bot the Builder</NavLink></p>
+
+                <div className='LoginNavbar'>
+                    <CreateModal userID={this.props.userID} HandleNewProjectID={this.props.HandleNewProjectID} jwt_token={this.props.jwt_token} handleCloseModal={this.handleCloseModal} showModal={this.state.showModal} />
+                    <div className='left_content'>
+                        <img className='logo' src='./images/logo.png'></img>
+                        <p><NavLink id='remove-decoration' to="">Bot the Builder</NavLink></p>
+                    </div>
+                    <ul className='nav__links'>
+                        <li><Link to='/'>Documentation</Link></li>
+                        <Button onClick={this.handleShowModal} sx={{fontSize:'19px', paddingTop: '5px', textTransform: 'capitalize', paddingBottom: '2px' }} variant="outlined">New Project</Button>
+                        <li><Link to='my-projects'>My Projects</Link></li>
+                        <li className='googleButton'><GoogleLoginButton HandleUserLogoutMain={this.HandleUserLogout} /></li>
+                    </ul>
                 </div>
-                <ul className='nav__links'>
-                    <li><Link to='/'>Documentation</Link></li>
-                    <button style={buttonStyle} onClick={this.handleShowModal}>Create a Project</button>
-                    <li><Link to='my-projects'>My Projects</Link></li>
-                    <li className='googleButton'><GoogleLoginButton HandleUserLogoutMain={this.HandleUserLogout} /></li>
-                </ul>
-            </div>
                 <Body></Body>
                 <Footer></Footer>
                 <MyChatbot></MyChatbot>
