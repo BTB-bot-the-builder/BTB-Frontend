@@ -21,12 +21,13 @@ import { Grid, Paper } from '@mui/material';
 
 class Body extends Component {
     render() {
+        
         return (
             <div className='yolo-body'>
                 <Container fluid>
                     <Row style={{marginTop: '20px', background: '#00adff1f'}}>
-                        <h5 style={{fontWeight: '400', fontSize: '18px'}}>API URL:<span style={{marginLeft: '100px'}}></span>http://FHVDBLUEBPAUCBWA3UYUBSUYFBWYUB23983B2IB.com</h5>
-                        <h5 style={{fontWeight: '400', fontSize: '18px'}}>API KEY:<span style={{marginLeft: '100px'}}></span>BBRYUDBWYFEBWUEYFBUFBFBOWYEF</h5>
+                        <h5 style={{fontWeight: '400', fontSize: '18px'}}>API URL:<span style={{marginLeft: '100px'}}></span>{this.props.data[0].api}</h5>
+                        <h5 style={{fontWeight: '400', fontSize: '18px'}}>API KEY:<span style={{marginLeft: '100px'}}></span>BTBhJsg6i7GzOkAOPjhPeQBBk%5EjFjWvEl1oB1%S9b8egwxy$6g</h5>
                     </Row>
                     <Row>
                         <Col xs={9}>
@@ -35,25 +36,25 @@ class Body extends Component {
                                 <Grid item xs={12} md={6}>
                                     <Paper style={{paddingTop: '55px'}} className='paper'>
                                         <h3>Total Requests</h3>
-                                        <p>12332</p>
+                                        <p>0</p>
                                     </Paper>
                                 </Grid>
                                 <Grid item xs={12} md={6}>
                                     <Paper className='paper'>
                                         <h3>Percentage queries failed to answer</h3>
-                                        <p>12.3%</p>
+                                        <p>0.0%</p>
                                     </Paper>
                                 </Grid>
                                 <Grid item xs={12} md={6}>
                                     <Paper className='paper'>
                                         <h3>Average Rating</h3>
-                                        <p>4.74</p>
+                                        <p>0</p>
                                     </Paper>
                                 </Grid>
                                 <Grid item xs={12} md={6}>
                                     <Paper className='paper'>
                                         <h3>Total Rating</h3>
-                                        <p>2</p>
+                                        <p>0</p>
                                     </Paper>
                                 </Grid>
                             </Grid>

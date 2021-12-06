@@ -11,7 +11,7 @@ import NavBar from './components/Yolo/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter,Route,Link,Routes } from 'react-router-dom';
 import HomePageComponent from './components/HomePageComponent/HomePageComponent';
-import MainPageOfYolo from './components/Yolo/Main'
+import MainPageOfYolo from './components/Yolo/MainPageOfYolo';
 
 class PageNotFoundComponent extends React.Component{
     render(){
@@ -106,7 +106,7 @@ class MyRoutes extends React.Component{
                         <Route path='/create-bot-step1' element={<MainPageComponent jwt_token={this.state.jwt_token} userID={this.state.userID} projectID={this.state.projectID}/>}/>
                         <Route path='/create-bot-step2' element={<MainPageComponent2 jwt_token={this.state.jwt_token} userID={this.state.userID} projectID={this.state.projectID}/>}/>
                         <Route path='/create-bot-step3' element={<MainPageComponent3 jwt_token={this.state.jwt_token} userID={this.state.userID} projectID={this.state.projectID}/>}/>
-                        <Route path='/my-projects' element={<MyProjectsPageComponent/>} />
+                        <Route path='/my-projects' element={<MyProjectsPageComponent jwt_token={this.state.jwt_token} userID={this.state.userID} projectID={this.state.projectID}/>} />
                         <Route path='/yolo' element={<MainPageOfYolo/>}/>
                         <Route path='*' element={<PageNotFoundComponent/>}/>
                     </Routes>

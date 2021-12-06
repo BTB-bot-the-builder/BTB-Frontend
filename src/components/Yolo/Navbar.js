@@ -8,13 +8,13 @@ class NavBar extends React.Component {
             <div className='Yolo-navbar'>
                 <Container style={{display: 'flex', justifyContent: 'space-between'}} fluid>
                     <Row className="leftContent">
-                        <h1>Project Name</h1>
-                        <h3>YOLO</h3>
-                        <p>Hi, I am AI generated bot.</p>
+                        <h1>{this.props.data[0].ProjectName}</h1>
+                        <h3>{this.props.data[0].botName}</h3>
+                        <p>{this.props.data[0].description}</p>
                     </Row>
                     <Row className='rightContent'>
-                        <img src='https://avataaars.io/?avatarStyle=Circle&topType=LongHairCurly&accessoriesType=Prescription01&hairColor=Black&facialHairType=Blank&clotheType=GraphicShirt&clotheColor=Gray01&graphicType=Skull&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light'/>
-                        <p>Created on: 25-6-2021</p>
+                        <img src={this.props.data[0].avatarUrl}/>
+                        <p>Created on: {this.props.data[0].date}</p>
                     </Row>
                 </Container>
             </div>
