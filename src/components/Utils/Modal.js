@@ -7,7 +7,6 @@ const CreateModal = (props) => (
 
     <Modal
         isOpen={!!props.showModal}
-        // isOpen={true}
         onRequestClose={props.handleCloseModal}
         style={{
             overlay: {

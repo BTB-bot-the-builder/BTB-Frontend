@@ -1144,7 +1144,14 @@
     "prop-types" "^15.7.2"
     "react-is" "^17.0.2"
 
-"@mui/material@^5.2.2":
+"@mui/icons-material@^5.2.1":
+  "integrity" "sha512-AFOn0bbaGd1dw8oYE40dv3I+QnfS5xP5HSUiUGsvb1ntP0cM1kW4VqQp7BtL7DbOpEsw1ZTbw67tDqSCH7utNg=="
+  "resolved" "https://registry.npmjs.org/@mui/icons-material/-/icons-material-5.2.1.tgz"
+  "version" "5.2.1"
+  dependencies:
+    "@babel/runtime" "^7.16.3"
+
+"@mui/material@^5.0.0", "@mui/material@^5.2.2":
   "integrity" "sha512-vqmZq+v59CT4V84WcvYkYldnjC6uRddYx0TJqgl2h5YRbbPYCGVVywVvg9cBwxy4j5xI3F2WH6z7WGkHqkJIQA=="
   "resolved" "https://registry.npmjs.org/@mui/material/-/material-5.2.2.tgz"
   "version" "5.2.2"
@@ -3209,7 +3216,7 @@
     "isobject" "^3.0.0"
     "static-extend" "^0.1.1"
 
-"classnames@^2.3.1":
+"classnames@^2.2.5", "classnames@^2.3.1":
   "integrity" "sha512-OlQdbZ7gLfGarSqxesMesDa5uz7KFbID8Kpq/SxIoNGDqY8lSYs0D+hhtBXhcdB3rcbXArFr7vlHheLk1voeNA=="
   "resolved" "https://registry.npmjs.org/classnames/-/classnames-2.3.1.tgz"
   "version" "2.3.1"
@@ -7305,7 +7312,7 @@
     "react-is" "^16.3.2"
     "warning" "^4.0.0"
 
-"prop-types@^15.5.8", "prop-types@^15.6.0", "prop-types@^15.6.1", "prop-types@^15.6.2", "prop-types@^15.7.2":
+"prop-types@^15.5.10", "prop-types@^15.5.8", "prop-types@^15.6.0", "prop-types@^15.6.1", "prop-types@^15.6.2", "prop-types@^15.7.2":
   "integrity" "sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ=="
   "resolved" "https://registry.npmjs.org/prop-types/-/prop-types-15.7.2.tgz"
   "version" "15.7.2"
@@ -7459,7 +7466,7 @@
     "shell-quote" "^1.6.1"
     "ws" "^2.0.3"
 
-"react-dom@^0.14.0 || ^15.0.0 || ^16 || ^17", "react-dom@^16 || ^17", "react-dom@^16.3.1", "react-dom@^17.0.2", "react-dom@>= 16.8.0", "react-dom@>=16", "react-dom@>=16.14.0", "react-dom@>=16.6.0", "react-dom@>=16.8":
+"react-dom@^0.14.0 || ^15.0.0 || ^16 || ^17", "react-dom@^16 || ^17", "react-dom@^16.3.1", "react-dom@^17.0.2", "react-dom@>= 16.8.0", "react-dom@>=0.14.0", "react-dom@>=16", "react-dom@>=16.14.0", "react-dom@>=16.6.0", "react-dom@>=16.8":
   "integrity" "sha512-s4h96KtLDUQlsENhMn1ar8t2bEa+q/YAtj8pPPdIjPDGBDIVNsrD9aXNWqspUe6AzKCIG0C1HZZLqLV7qpOBGA=="
   "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-17.0.2.tgz"
   "version" "17.0.2"
@@ -7611,6 +7618,15 @@
   "version" "6.0.2"
   dependencies:
     "history" "^5.1.0"
+
+"react-scrollspy@^3.4.3":
+  "integrity" "sha512-c2QZpMPWxm1HF71h1EqaxBldx2zLYO0aZ24Bcuo2mUWF79T+F6qOtr7XJCzUDm99NOwhVKQD01a7A8VC6c90CQ=="
+  "resolved" "https://registry.npmjs.org/react-scrollspy/-/react-scrollspy-3.4.3.tgz"
+  "version" "3.4.3"
+  dependencies:
+    "babel-runtime" "^6.26.0"
+    "classnames" "^2.2.5"
+    "prop-types" "^15.5.10"
 
 "react-simple-chatbot@^0.6.1":
   "integrity" "sha512-q9y5GXwBvD+YvLgDVyDuZHYMkrcgIirm1FVV9RkR7XojPmbiX1lCzT6ib8U1M5zh42kTUBRnszXzkAGm9e0K8w=="

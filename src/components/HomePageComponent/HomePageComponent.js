@@ -65,7 +65,7 @@ class HomePageComponent extends React.Component {
                         <p><NavLink id='remove-decoration' to="">Bot the Builder</NavLink></p>
                     </div>
                     <ul className='nav__links'>
-                        <li><Link to='/'>Documentation</Link></li>
+                        <li><Link to='/documentation'>Documentation</Link></li>
                         <Button onClick={this.handleShowModal} sx={{fontSize:'19px', paddingTop: '5px', textTransform: 'capitalize', paddingBottom: '2px' }} variant="outlined">New Project</Button>
                         <li><Link to='my-projects'>My Projects</Link></li>
                         <li className='googleButton'><GoogleLoginButton HandleUserLogoutMain={this.HandleUserLogout} /></li>

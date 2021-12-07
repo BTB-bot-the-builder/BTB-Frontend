@@ -7,7 +7,7 @@ class MainPageComponent2 extends React.Component{
         return (
             <div className='Main'>
                 <ProgressBar2></ProgressBar2>
-                <MainPageBody2></MainPageBody2>
+                <MainPageBody2 jwt_token={this.props.jwt_token} userID={this.props.userID} projectID={this.props.projectID}></MainPageBody2>
             </div>
         );
     }
