@@ -12,6 +12,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter,Route,Link,Routes } from 'react-router-dom';
 import HomePageComponent from './components/HomePageComponent/HomePageComponent';
 import MainPageOfYolo from './components/Yolo/MainPageOfYolo';
+import DocuPage from './components/DemoPage/Main';
+import ChatWindow from './components/ChatWindow/ChatWindow.js';
 
 class PageNotFoundComponent extends React.Component{
     render(){
@@ -107,12 +109,14 @@ class MyRoutes extends React.Component{
                         <Route path='/create-bot-step2' element={<MainPageComponent2 jwt_token={this.state.jwt_token} userID={this.state.userID} projectID={this.state.projectID}/>}/>
                         <Route path='/create-bot-step3' element={<MainPageComponent3 jwt_token={this.state.jwt_token} userID={this.state.userID} projectID={this.state.projectID}/>}/>
                         <Route path='/my-projects' element={<MyProjectsPageComponent jwt_token={this.state.jwt_token} userID={this.state.userID} projectID={this.state.projectID}/>} />
-                        <Route path='/yolo' element={<MainPageOfYolo/>}/>
+                        <Route path='/yolo' element={<MainPageOfYolo jwt_token={this.state.jwt_token} userID={this.state.userID} projectID={this.state.projectID}/>} />
+                        <Route path='/documentation' element={<DocuPage/>}/>
                         <Route path='*' element={<PageNotFoundComponent/>}/>
                     </Routes>
                 ) : (
                     <Routes>
                         <Route path='/' element={<LandingPageComponent HandleUserLoginMain={this.HandleUserLogin}/>} />
+                        <Route path='/documentation' element={<DocuPage/>}/>
                         <Route path='*' element={<PageNotFoundComponent/>}/>
                     </Routes>
                 ) } 
@@ -123,3 +127,13 @@ class MyRoutes extends React.Component{
 
 
 ReactDOM.render(<MyRoutes/>, document.getElementById("app"));
+
+
+// <BrowserRouter>
+//             <Routes>
+//                 <Route path='/' element={<ChatWindow/>} />
+//             </Routes>
+//             </BrowserRouter>
+        
+
+        

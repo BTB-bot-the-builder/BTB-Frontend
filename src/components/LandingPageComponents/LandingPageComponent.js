@@ -31,13 +31,13 @@ class LandingPageComponent extends React.Component{
                             <p><NavLink id='remove-decoration' to="">Bot the Builder</NavLink></p>
                         </div>
                         <ul className='nav__links'>
-                            <li><a href='#'>Documentation</a></li>
+                            <li><a href='/documentation'>Documentation</a></li>
                             <GoogleLoginButton HandleUserLoginMain={this.HandleUserLogin}/>
                         </ul>
                 </div>
                 <Body></Body>
                 <Footer></Footer>
-                <MyChatbot></MyChatbot>
+                
             </div>
         );
     }

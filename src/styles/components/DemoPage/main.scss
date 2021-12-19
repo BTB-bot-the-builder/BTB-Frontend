@@ -1,0 +1,42 @@
+.demopage{
+    font-weight: 500;
+    .left_content{
+        position: sticky;
+        top: 0;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+
+        #remove-decoration{
+            text-decoration: none;
+            font-weight: 400;
+            color:black;
+        }
+
+        .logo {
+            width: 85px;
+            height: 82px;
+            cursor: pointer;
+        }
+    
+        p{
+            font-size: 28px;
+            margin-bottom: 0;
+            padding: 0;
+        }
+    }
+    .sidebar{
+        position: sticky;
+        top: 82px;
+        margin-bottom: 10px;
+    
+        .links{
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+        }
+    }
+    li{
+        list-style-type: disc;
+    }
+}

@@ -33,7 +33,7 @@ class MyChatbot extends Component {
 
 
   handleNewUserMessage = (newMessage) => {
-    var api_link = "http://localhost:5000/api/chatbot/1/chat?api_key=1234&question=" + newMessage;
+    var api_link = "http://localhost:8990/api/chatbot/36/chat?api_key=BTBhJsg6i7GzOkAOPjhPeQBBk%5EjFjWvEl1oB1%S9b8egwxy$6g&question=" + newMessage;
     axios.get(api_link)
       .then(res => {
         if (res.data.intent === 'QA') {

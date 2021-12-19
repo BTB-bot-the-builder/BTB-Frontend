@@ -1,58 +1,55 @@
 .main {
-  .form{
-    .add-button{
-      p{
+    .form{
+      display: flex;
+      flex-direction: column;
+      min-height: 450px;
+      .add-button{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 4%;
         padding: 0;
-        margin: 0;
-        color: white;
-      }
-      
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 4%;
-      padding: 0;
-
-      button{
-        color:  white;
-        border-radius: 10px;
-        background: #2E9AFD;
-        padding: 7px 5%;
-        border: none;
-      }
-    }
-
-    #main_page_button3{
-      margin-top: 30%;
-    }
-
-    .main_page_form3{
-      display: flex;
-
-      .page_names{
-        display: flex;
-        flex-direction: column;
-      }
-
-      .page_urls{
-        display: flex;
-        flex-direction: column;
+  
+        button{
+          color:  white;
+          border-radius: 10px;
+          background: #2E9AFD;
+          padding: 7px 5%;
+          border: none;
+        }
       }
   
-      .input_label1{
-        margin-left: 0.4rem;
-        font-size: 1.35rem;
+      #main_page_button3{
+        margin-top: 30%;
+      }
   
-      }
-      .input_label2{
-        margin-left: 0.4rem;
-        font-size: 1.35rem;
-      }
-
-      input{
-        padding: 3px 0px 5px 10px;
-        margin: 3px 10px;
+      .main_page_form3{
+        display: flex;
+  
+        .page_names{
+          display: flex;
+          flex-direction: column;
+        }
+  
+        .page_urls{
+          display: flex;
+          flex-direction: column;
+        }
+    
+        .input_label1{
+          margin-left: 0.4rem;
+          font-size: 1.35rem;
+    
+        }
+        .input_label2{
+          margin-left: 0.4rem;
+          font-size: 1.35rem;
+        }
+  
+        input{
+          padding: 3px 0px 5px 10px;
+          margin: 3px 10px;
+        }
       }
     }
-  }
 }

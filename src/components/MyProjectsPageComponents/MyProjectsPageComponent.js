@@ -4,16 +4,7 @@ import CreateModal from "../HomePageComponent/CreateModal";
 import { NavLink,Link } from 'react-router-dom';
 import GoogleLoginButton from '../GoogleLoginComponent/GoogleLoginButton';
 import axios from "axios";
-
-const buttonStyle = {
-    fontSize: '22px',
-    fontFamily: 'inherit',
-    background: '#2E9AFD',
-    color: 'white',
-    border: 'none',
-    borderRadius: '10px',
-    padding: '4px 14px'
-}
+import { Button } from '@mui/material';
 
 class MyProjectsPageComponent extends React.Component{
     state = {
@@ -64,11 +55,11 @@ class MyProjectsPageComponent extends React.Component{
                     <CreateModal handleCloseModal={this.handleCloseModal} showModal={this.state.showModal} />
                     <div className='left_content'>
                         <img className='logo' src='./images/logo.png'></img>
-                        <p><NavLink to='/' id='remove-decoration' to="">Bot the Builder</NavLink></p>
+                        <p><NavLink to='/' id='remove-decoration' to="/">Bot the Builder</NavLink></p>
                     </div>
                     <ul className='nav__links'>
-                        <li><Link to='/'>Documentation</Link></li>
-                        <button style={buttonStyle} onClick={this.handleShowModal}>Create a Project</button>
+                        <li><Link to='/documentation'>Documentation</Link></li>
+                        <Button onClick={this.handleShowModal} sx={{fontSize:'19px', paddingTop: '5px', textTransform: 'capitalize', paddingBottom: '2px' }} variant="outlined">New Project</Button>   
                         <li><Link to='/my-projects'>My Projects</Link></li>
                         <li className='googleButton'><GoogleLoginButton HandleUserLogoutMain={this.HandleUserLogout} /></li>
                     </ul>

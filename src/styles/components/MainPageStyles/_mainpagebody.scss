@@ -15,7 +15,6 @@ $assetPath: "E:/react/bot-the-builder/public/images";
     background-position: center;
     background-size: 412px 377px;
     margin-left: 30px;
-    display: flex;
 
     input,textarea {
       padding: 0;
@@ -124,17 +123,16 @@ $assetPath: "E:/react/bot-the-builder/public/images";
         }
       }
     }
+  }
 
-    button {
-      position: relative;
-      top:22%;
-      color:white;
-      float: right;
-      border-radius: 10px;
-      background: #56ac00;
-      padding: 7px 6%;
-      border: none;
-    }
+  .button {
+    position: relative;
+    color:white;
+    float: right;
+    border-radius: 10px;
+    background: #56ac00;
+    padding: 7px 6%;
+    border: none;
   }
 
   img {
