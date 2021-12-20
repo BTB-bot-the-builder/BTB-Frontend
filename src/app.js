@@ -125,15 +125,4 @@ class MyRoutes extends React.Component{
     }
 }
 
-
 ReactDOM.render(<MyRoutes/>, document.getElementById("app"));
-
-
-// <BrowserRouter>
-//             <Routes>
-//                 <Route path='/' element={<ChatWindow/>} />
-//             </Routes>
-//             </BrowserRouter>
-        
-
-        

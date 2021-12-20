@@ -10,14 +10,13 @@ let itr = 0;
 class MyProjectBody extends React.Component {
     render() {
         return (
-            
             <div className="my_projects_body">
                 <h4>My Projects</h4>
                 <Grid container rowSpacing={2} columnSpacing={8} columns={{ xs: 4, sm: 8, md: 10 }}>
                     {this.props.projects.map((project, index) => (
                         <Grid item xs={2} sm={4} md={2} key={index}>
                             <Card
-                                ProjectName={project.projectName}
+                                ProjectName={project.projectName.length > 12 ? project.projectName.substring(0,13)+"..." : project.projectName}
                                 description={project.description ? project.description : "No Description"}
                                 date={project.date}
                                 avatarUrl={project.avatarUrl}
@@ -29,15 +28,6 @@ class MyProjectBody extends React.Component {
                         </Grid>
                     ))}
                 </Grid>
-                {/* <Container fluid style={{ padding: '0' }}>
-                    <Row>
-
-                        <Col key={index}>
-
-                        </Col>
-
-                    </Row>
-                </Container> */}
             </div>
         );
     }

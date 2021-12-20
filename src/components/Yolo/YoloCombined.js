@@ -50,8 +50,7 @@ class YoloCombined extends React.Component{
         return (
             <div>
                 <Navbar projectName={this.state.projectName} botName={this.state.botName} description={this.state.description} date={this.state.date} avatarUrl={this.state.avatarUrl}></Navbar>
-                <Body api={this.state.api} apiKey={this.state.apiKey} sumRatings={this.state.sumRatings} totalRatings={this.state.totalRatings} totalRequests={this.state.totalRequests}></Body>
-                <ChatWindow api={this.state.api} projectName={this.state.projectName} botName={this.state.botName} avatarUrl={this.state.avatarUrl}></ChatWindow>
+                <Body api={this.state.api} apiKey={this.state.apiKey} sumRatings={this.state.sumRatings} totalRatings={this.state.totalRatings} totalRequests={this.state.totalRequests} projectName={this.state.projectName} botName={this.state.botName} avatarUrl={this.state.avatarUrl}></Body>
             </div>
         );
     }
