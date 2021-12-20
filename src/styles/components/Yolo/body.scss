@@ -19,4 +19,37 @@
             color: #2E9AFD;
         }
     }
+
+    //ChatBox
+    .Chatbox{
+        padding-bottom: 1px;
+        box-shadow: 0 0 8px 4px #bebebe;
+        border-radius: 10px;
+        margin: -67px 24px 0px 0px;
+
+        .Autoscroll{
+            display: flex;
+            flex-direction: column;
+            min-height: 364px;
+            max-height: 364px;
+            overflow-y: scroll;
+        }
+
+        .radio {
+            visibility:hidden;
+        }
+        label {
+            cursor: pointer;
+        }
+        .radio:checked + label {
+            background: #2E9AFD;
+            color: white;
+        }
+
+        label{
+            text-align: center;
+            width: 46%;
+            border: 1px solid black;
+        }
+    }
 }

@@ -1,20 +1,22 @@
 import React, { Component } from 'react'
-import Navbar from './Navbar'
-import Body from './body';
-import MyChatbot from '../LandingPageComponents/MyChatbot';
+import YoloCombined from './YoloCombined';
 import { useLocation } from 'react-router-dom';
 
-const MainPageOfYolo = () => {
-    const location = useLocation()
-    const { data } = location.state;
+const MainPageOfYolo = (props) => {
+    const { search } = useLocation();
+    const query_string = search.substring(1);
+    const q = query_string.substring(0,3);
+    const id = query_string.substring(3);
+    
         return (
             <div>
-                <Navbar data={data}></Navbar>
-                <Body data={data}></Body>
-                <MyChatbot></MyChatbot>
+                <YoloCombined userID={props.userID} id={id}></YoloCombined>
             </div>
         );
 
 }
+
+
+
 
 export default MainPageOfYolo;

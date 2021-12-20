@@ -81,7 +81,7 @@ class MainPageBody2 extends React.Component {
                                     <p>For better results, make sure that the questions belong to a specific domain.</p>
                                     <p>Number of question answer pairs in the json should be large to get better performance</p>
                                 </div>
-                                <button style={{top: '23px'}}>Next</button>
+                                <button className="button" style={{top: '23px'}}>Next</button>
                             </form>
                         </div>
                         <img src='https://www.ramco.com/hubfs/chatbot.gif' alt='gif here'></img>

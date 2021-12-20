@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
-import Scrollspy from 'react-scrollspy'
+import Scrollspy from 'react-scrollspy';
 
 class Main extends Component {
 
@@ -9,8 +9,8 @@ class Main extends Component {
         return (
             <Container className='demopage'>
                 <div className='left_content'>
-                    <img className='logo' src='./images/logo.png'></img>
-                    <p><a id='remove-decoration' >Bot the Builder</a></p>
+                <NavLink id='remove-decoration' to="/"><img className='logo' src='./images/logo.png'></img></NavLink>
+                    <p id="remove-decoration">Documentation</p>
                 </div>
                 <Row>
                     <Col sm={3}>

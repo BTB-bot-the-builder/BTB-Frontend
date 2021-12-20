@@ -55,11 +55,11 @@ class MyProjectsPageComponent extends React.Component{
                     <CreateModal handleCloseModal={this.handleCloseModal} showModal={this.state.showModal} />
                     <div className='left_content'>
                         <img className='logo' src='./images/logo.png'></img>
-                        <p><NavLink to='/' id='remove-decoration' to="">Bot the Builder</NavLink></p>
+                        <p><NavLink to='/' id='remove-decoration' to="/">Bot the Builder</NavLink></p>
                     </div>
                     <ul className='nav__links'>
                         <li><Link to='/documentation'>Documentation</Link></li>
-                        <Button onClick={this.handleShowModal} sx={{fontSize:'19px', paddingTop: '5px', textTransform: 'capitalize', paddingBottom: '2px' }} variant="outlined">Create a Project</Button>   
+                        <Button onClick={this.handleShowModal} sx={{fontSize:'19px', paddingTop: '5px', textTransform: 'capitalize', paddingBottom: '2px' }} variant="outlined">New Project</Button>   
                         <li><Link to='/my-projects'>My Projects</Link></li>
                         <li className='googleButton'><GoogleLoginButton HandleUserLogoutMain={this.HandleUserLogout} /></li>
                     </ul>

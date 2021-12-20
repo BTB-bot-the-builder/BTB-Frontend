@@ -26,7 +26,7 @@ class Body extends React.Component {
                         <Col className='right-content'>
                             <div>
                                 <h2 id='HeadingMarketingText' >Easy to use interface<span className='Number'>01</span></h2>
-                                <p className='TextMarketingText'>Description of the feature will be here in detail and will tell user clearly about the features we are providing</p>
+                                <p className='TextMarketingText'>Create your Chatbot easily with user friendly interface providing interactive user experience</p>
                             </div>
                         </Col>
                     </Row>
@@ -35,7 +35,7 @@ class Body extends React.Component {
                         <Col className='left-content'>
                             <div>
                                 <h2 id='HeadingMarketingText'><span className='Number'>02</span>Easy to integrate bots</h2>
-                                <p className='TextMarketingText'>Description of the feature will be here in detail and will tell user clearly about the features we are providing</p>
+                                <p className='TextMarketingText'>Easily integrate your Chatbot with any of your Software or website using our REST APIs</p>
                             </div>
                         </Col>
                         <Col className='right-content'>
@@ -50,7 +50,7 @@ class Body extends React.Component {
                         <Col className='right-content'>
                             <div>
                                 <h2 id='HeadingMarketingText'>Test your bots<span className='Number'>03</span></h2>
-                                <p className='TextMarketingText'>Description of the feature will be here in detail and will tell user clearly about the features we are providing</p>
+                                <p className='TextMarketingText'>Validate the performance of your Chatbot using testing mechanism of Bot the Builder</p>
                             </div>
                         </Col>
                     </Row>
@@ -59,7 +59,7 @@ class Body extends React.Component {
                         <h2>Build a Chatbot</h2>
                         <div>
                             <button>
-                                <a href=''>Get Started</a>
+                                <a href='/#HeadingMarketingText'>Get Started</a>
                             </button>
                         </div>
                     </div>

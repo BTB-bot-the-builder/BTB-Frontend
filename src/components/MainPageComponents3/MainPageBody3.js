@@ -144,7 +144,7 @@ class MainPageBody3 extends React.Component {
                                     </div>
                                 </form>
                                 <UserURLComponent user_urls={this.state.user_urls} HandleDeleteUrl={this.HandleDeleteUrl}></UserURLComponent>
-                                <button onClick={this.HandleDeployProject} style={{ position: 'fixed', top: '82%', left: '40%', padding: '7px 32px' }}>Deploy</button>
+                                <button className="button" onClick={this.HandleDeployProject} style={{ position: 'fixed', top: '82%', left: '40%', padding: '7px 32px' }}>Deploy</button>
                             </div>
                             <img src='https://www.ramco.com/hubfs/chatbot.gif' alt='gif here'></img>
                         </div>

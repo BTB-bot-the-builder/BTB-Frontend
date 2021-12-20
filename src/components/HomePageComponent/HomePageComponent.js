@@ -73,7 +73,6 @@ class HomePageComponent extends React.Component {
                 </div>
                 <Body></Body>
                 <Footer></Footer>
-                <MyChatbot></MyChatbot>
             </div>
         );
     }

@@ -1,9 +1,8 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Card from "./Card";
-import { NavLink, Link } from 'react-router-dom';
 import {Grid} from '@mui/material';
-
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 let clr = ['#B7DCFF', '#CCFFD7', '#FFD0D0'];
 let itr = 0;
@@ -24,19 +23,11 @@ class MyProjectBody extends React.Component {
                                 api={project.api}
                                 color={clr[(itr++) % 3]}
                                 botName={project.botName ? project.botName : "No name"}
-                                key={index} />
+                                key={index} 
+                                projectId={project.projectId}/>          
                         </Grid>
                     ))}
                 </Grid>
-                {/* <Container fluid style={{ padding: '0' }}>
-                    <Row>
-
-                        <Col key={index}>
-
-                        </Col>
-
-                    </Row>
-                </Container> */}
             </div>
         );
     }
