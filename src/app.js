@@ -31,7 +31,7 @@ class MyRoutes extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
-            isLoggedIn: false,
+            isLoggedIn: true,
             jwt_token: "",
             userID: -1,
             projectID: -1,
@@ -102,7 +102,7 @@ class MyRoutes extends React.Component{
     render(){
         return(
             <BrowserRouter>
-                {this.state.isLoggedIn? (
+                {!this.state.isLoggedIn? (
                     <Routes>
                         <Route path='/' element={<HomePageComponent HandleNewProjectID={this.HandleNewProjectID} userID={this.state.userID} jwt_token={this.state.jwt_token} HandleUserLogoutMain={this.HandleUserLogout}/>} />
                         <Route path='/create-bot-step1' element={<MainPageComponent jwt_token={this.state.jwt_token} userID={this.state.userID} projectID={this.state.projectID}/>}/>
